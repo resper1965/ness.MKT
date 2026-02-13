@@ -1,0 +1,21 @@
+project:
+  name: "ag-kit-init"
+  scale: SMALL
+  started: "2026-02-13T02:16:43.908Z"
+  current_phase: P
+
+phases:
+  P:
+    status: in_progress
+    started_at: "2026-02-13T02:16:43.908Z"
+  R:
+    status: skipped
+    reason: "Not required for scale SMALL"
+  E:
+    status: pending
+  V:
+    status: pending
+  C:
+    status: skipped
+    reason: "Not required for scale SMALL"
+

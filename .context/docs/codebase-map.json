@@ -1,0 +1,795 @@
+{
+  "version": "1.0.0",
+  "generated": "2026-02-13T02:14:44.123Z",
+  "stack": {
+    "primaryLanguage": "typescript",
+    "languages": [
+      "javascript",
+      "typescript"
+    ],
+    "frameworks": [
+      "nextjs"
+    ],
+    "buildTools": [],
+    "testFrameworks": [],
+    "packageManager": null,
+    "isMonorepo": false,
+    "hasDocker": false,
+    "hasCI": false
+  },
+  "structure": {
+    "totalFiles": 150,
+    "topDirectories": [
+      {
+        "name": "bun.lock",
+        "fileCount": 1
+      },
+      {
+        "name": "bun.lock:Zone.Identifier",
+        "fileCount": 1
+      },
+      {
+        "name": "Caddyfile",
+        "fileCount": 1
+      },
+      {
+        "name": "Caddyfile:Zone.Identifier",
+        "fileCount": 1
+      },
+      {
+        "name": "components.json",
+        "fileCount": 1
+      },
+      {
+        "name": "components.json:Zone.Identifier",
+        "fileCount": 1
+      },
+      {
+        "name": "download",
+        "fileCount": 2
+      },
+      {
+        "name": "eslint.config.mjs",
+        "fileCount": 1
+      },
+      {
+        "name": "eslint.config.mjs:Zone.Identifier",
+        "fileCount": 1
+      },
+      {
+        "name": "examples",
+        "fileCount": 4
+      },
+      {
+        "name": "mini-services",
+        "fileCount": 0
+      },
+      {
+        "name": "next.config.ts",
+        "fileCount": 1
+      },
+      {
+        "name": "next.config.ts:Zone.Identifier",
+        "fileCount": 1
+      },
+      {
+        "name": "package.json",
+        "fileCount": 1
+      },
+      {
+        "name": "package.json:Zone.Identifier",
+        "fileCount": 1
+      },
+      {
+        "name": "postcss.config.mjs",
+        "fileCount": 1
+      },
+      {
+        "name": "postcss.config.mjs:Zone.Identifier",
+        "fileCount": 1
+      },
+      {
+        "name": "prisma",
+        "fileCount": 2
+      },
+      {
+        "name": "public",
+        "fileCount": 4
+      },
+      {
+        "name": "README.md",
+        "fileCount": 1
+      },
+      {
+        "name": "README.md:Zone.Identifier",
+        "fileCount": 1
+      },
+      {
+        "name": "src",
+        "fileCount": 118
+      },
+      {
+        "name": "tailwind.config.ts",
+        "fileCount": 1
+      },
+      {
+        "name": "tailwind.config.ts:Zone.Identifier",
+        "fileCount": 1
+      },
+      {
+        "name": "tsconfig.json",
+        "fileCount": 1
+      },
+      {
+        "name": "tsconfig.json:Zone.Identifier",
+        "fileCount": 1
+      }
+    ],
+    "languageDistribution": [
+      {
+        "extension": ".identifier",
+        "count": 75
+      },
+      {
+        "extension": ".tsx",
+        "count": 52
+      },
+      {
+        "extension": ".ts",
+        "count": 10
+      },
+      {
+        "extension": ".json",
+        "count": 3
+      },
+      {
+        "extension": ".mjs",
+        "count": 2
+      },
+      {
+        "extension": ".md",
+        "count": 2
+      },
+      {
+        "extension": ".lock",
+        "count": 1
+      },
+      {
+        "extension": ".txt",
+        "count": 1
+      },
+      {
+        "extension": ".svg",
+        "count": 1
+      },
+      {
+        "extension": ".prisma",
+        "count": 1
+      }
+    ]
+  },
+  "architecture": {
+    "layers": [
+      {
+        "name": "Utils",
+        "description": "Shared utilities and helpers",
+        "directories": [
+          "src/lib"
+        ],
+        "symbolCount": 1,
+        "dependsOn": []
+      },
+      {
+        "name": "Controllers",
+        "description": "Request handling and routing",
+        "directories": [
+          "src/app/api",
+          "src/app/api/signatures",
+          "src/app/api/signatures/[slug]"
+        ],
+        "symbolCount": 5,
+        "dependsOn": []
+      },
+      {
+        "name": "Components",
+        "description": "UI components and views",
+        "directories": [
+          "src/app",
+          "src/components/ui",
+          "src/app/s/[slug]"
+        ],
+        "symbolCount": 79,
+        "dependsOn": []
+      }
+    ],
+    "patterns": [],
+    "entryPoints": [
+      "examples/websocket/server.ts"
+    ]
+  },
+  "symbols": {
+    "classes": [],
+    "interfaces": [
+      {
+        "name": "Message",
+        "kind": "interface",
+        "file": "examples/websocket/server.ts",
+        "line": 21,
+        "exported": false
+      },
+      {
+        "name": "SignatureData",
+        "kind": "interface",
+        "file": "src/app/s/[slug]/page.tsx",
+        "line": 15,
+        "exported": false
+      },
+      {
+        "name": "State",
+        "kind": "interface",
+        "file": "src/hooks/use-toast.ts",
+        "line": 55,
+        "exported": false
+      },
+      {
+        "name": "User",
+        "kind": "interface",
+        "file": "examples/websocket/server.ts",
+        "line": 16,
+        "exported": false
+      }
+    ],
+    "functions": [
+      {
+        "name": "cn",
+        "kind": "function",
+        "file": "src/lib/utils.ts",
+        "line": 4,
+        "exported": true
+      },
+      {
+        "name": "DELETE",
+        "kind": "function",
+        "file": "src/app/api/signatures/[slug]/route.ts",
+        "line": 34,
+        "exported": true
+      },
+      {
+        "name": "GET",
+        "kind": "function",
+        "file": "src/app/api/route.ts",
+        "line": 3,
+        "exported": true
+      },
+      {
+        "name": "GET",
+        "kind": "function",
+        "file": "src/app/api/signatures/route.ts",
+        "line": 6,
+        "exported": true
+      },
+      {
+        "name": "GET",
+        "kind": "function",
+        "file": "src/app/api/signatures/[slug]/route.ts",
+        "line": 5,
+        "exported": true
+      },
+      {
+        "name": "POST",
+        "kind": "function",
+        "file": "src/app/api/signatures/route.ts",
+        "line": 20,
+        "exported": true
+      },
+      {
+        "name": "RootLayout",
+        "kind": "function",
+        "file": "src/app/layout.tsx",
+        "line": 29,
+        "exported": true
+      },
+      {
+        "name": "useIsMobile",
+        "kind": "function",
+        "file": "src/hooks/use-mobile.ts",
+        "line": 5,
+        "exported": true
+      },
+      {
+        "name": "Accordion",
+        "kind": "function",
+        "file": "src/components/ui/accordion.tsx",
+        "line": 9,
+        "exported": false
+      },
+      {
+        "name": "AccordionItem",
+        "kind": "function",
+        "file": "src/components/ui/accordion.tsx",
+        "line": 15,
+        "exported": false
+      },
+      {
+        "name": "AccordionTrigger",
+        "kind": "function",
+        "file": "src/components/ui/accordion.tsx",
+        "line": 28,
+        "exported": false
+      },
+      {
+        "name": "AlertDialog",
+        "kind": "function",
+        "file": "src/components/ui/alert-dialog.tsx",
+        "line": 9,
+        "exported": false
+      },
+      {
+        "name": "AlertDialogDescription",
+        "kind": "function",
+        "file": "src/components/ui/alert-dialog.tsx",
+        "line": 108,
+        "exported": false
+      },
+      {
+        "name": "AspectRatio",
+        "kind": "function",
+        "file": "src/components/ui/aspect-ratio.tsx",
+        "line": 5,
+        "exported": false
+      },
+      {
+        "name": "Badge",
+        "kind": "function",
+        "file": "src/components/ui/badge.tsx",
+        "line": 28,
+        "exported": false
+      },
+      {
+        "name": "Breadcrumb",
+        "kind": "function",
+        "file": "src/components/ui/breadcrumb.tsx",
+        "line": 7,
+        "exported": false
+      },
+      {
+        "name": "Carousel",
+        "kind": "function",
+        "file": "src/components/ui/carousel.tsx",
+        "line": 45,
+        "exported": false
+      },
+      {
+        "name": "CarouselNext",
+        "kind": "function",
+        "file": "src/components/ui/carousel.tsx",
+        "line": 204,
+        "exported": false
+      },
+      {
+        "name": "ChartContainer",
+        "kind": "function",
+        "file": "src/components/ui/chart.tsx",
+        "line": 37,
+        "exported": false
+      },
+      {
+        "name": "Checkbox",
+        "kind": "function",
+        "file": "src/components/ui/checkbox.tsx",
+        "line": 9,
+        "exported": false
+      },
+      {
+        "name": "Collapsible",
+        "kind": "function",
+        "file": "src/components/ui/collapsible.tsx",
+        "line": 5,
+        "exported": false
+      },
+      {
+        "name": "CollapsibleTrigger",
+        "kind": "function",
+        "file": "src/components/ui/collapsible.tsx",
+        "line": 11,
+        "exported": false
+      },
+      {
+        "name": "ContextMenu",
+        "kind": "function",
+        "file": "src/components/ui/context-menu.tsx",
+        "line": 9,
+        "exported": false
+      },
+      {
+        "name": "ContextMenuRadioGroup",
+        "kind": "function",
+        "file": "src/components/ui/context-menu.tsx",
+        "line": 45,
+        "exported": false
+      },
+      {
+        "name": "ContextMenuRadioItem",
+        "kind": "function",
+        "file": "src/components/ui/context-menu.tsx",
+        "line": 163,
+        "exported": false
+      },
+      {
+        "name": "Dialog",
+        "kind": "function",
+        "file": "src/components/ui/dialog.tsx",
+        "line": 9,
+        "exported": false
+      },
+      {
+        "name": "DialogClose",
+        "kind": "function",
+        "file": "src/components/ui/dialog.tsx",
+        "line": 27,
+        "exported": false
+      },
+      {
+        "name": "DialogDescription",
+        "kind": "function",
+        "file": "src/components/ui/dialog.tsx",
+        "line": 119,
+        "exported": false
+      },
+      {
+        "name": "DialogPortal",
+        "kind": "function",
+        "file": "src/components/ui/dialog.tsx",
+        "line": 21,
+        "exported": false
+      },
+      {
+        "name": "DialogTrigger",
+        "kind": "function",
+        "file": "src/components/ui/dialog.tsx",
+        "line": 15,
+        "exported": false
+      },
+      {
+        "name": "dispatch",
+        "kind": "function",
+        "file": "src/hooks/use-toast.ts",
+        "line": 136,
+        "exported": false
+      },
+      {
+        "name": "Drawer",
+        "kind": "function",
+        "file": "src/components/ui/drawer.tsx",
+        "line": 8,
+        "exported": false
+      },
+      {
+        "name": "DrawerClose",
+        "kind": "function",
+        "file": "src/components/ui/drawer.tsx",
+        "line": 26,
+        "exported": false
+      },
+      {
+        "name": "DrawerOverlay",
+        "kind": "function",
+        "file": "src/components/ui/drawer.tsx",
+        "line": 32,
+        "exported": false
+      },
+      {
+        "name": "DrawerPortal",
+        "kind": "function",
+        "file": "src/components/ui/drawer.tsx",
+        "line": 20,
+        "exported": false
+      },
+      {
+        "name": "DrawerTrigger",
+        "kind": "function",
+        "file": "src/components/ui/drawer.tsx",
+        "line": 14,
+        "exported": false
+      },
+      {
+        "name": "DropdownMenu",
+        "kind": "function",
+        "file": "src/components/ui/dropdown-menu.tsx",
+        "line": 9,
+        "exported": false
+      },
+      {
+        "name": "FormControl",
+        "kind": "function",
+        "file": "src/components/ui/form.tsx",
+        "line": 107,
+        "exported": false
+      },
+      {
+        "name": "FormDescription",
+        "kind": "function",
+        "file": "src/components/ui/form.tsx",
+        "line": 125,
+        "exported": false
+      },
+      {
+        "name": "genId",
+        "kind": "function",
+        "file": "src/hooks/use-toast.ts",
+        "line": 30,
+        "exported": false
+      },
+      {
+        "name": "HoverCard",
+        "kind": "function",
+        "file": "src/components/ui/hover-card.tsx",
+        "line": 8,
+        "exported": false
+      },
+      {
+        "name": "Input",
+        "kind": "function",
+        "file": "src/components/ui/input.tsx",
+        "line": 5,
+        "exported": false
+      },
+      {
+        "name": "InputOTP",
+        "kind": "function",
+        "file": "src/components/ui/input-otp.tsx",
+        "line": 9,
+        "exported": false
+      },
+      {
+        "name": "Label",
+        "kind": "function",
+        "file": "src/components/ui/label.tsx",
+        "line": 8,
+        "exported": false
+      },
+      {
+        "name": "MenubarPortal",
+        "kind": "function",
+        "file": "src/components/ui/menubar.tsx",
+        "line": 37,
+        "exported": false
+      },
+      {
+        "name": "MenubarRadioItem",
+        "kind": "function",
+        "file": "src/components/ui/menubar.tsx",
+        "line": 140,
+        "exported": false
+      },
+      {
+        "name": "MenubarSubContent",
+        "kind": "function",
+        "file": "src/components/ui/menubar.tsx",
+        "line": 243,
+        "exported": false
+      },
+      {
+        "name": "NavigationMenuContent",
+        "kind": "function",
+        "file": "src/components/ui/navigation-menu.tsx",
+        "line": 85,
+        "exported": false
+      },
+      {
+        "name": "NavigationMenuTrigger",
+        "kind": "function",
+        "file": "src/components/ui/navigation-menu.tsx",
+        "line": 65,
+        "exported": false
+      },
+      {
+        "name": "PaginationEllipsis",
+        "kind": "function",
+        "file": "src/components/ui/pagination.tsx",
+        "line": 102,
+        "exported": false
+      }
+    ],
+    "types": [
+      {
+        "name": "ChartConfig",
+        "kind": "type",
+        "file": "src/components/ui/chart.tsx",
+        "line": 11,
+        "exported": true
+      },
+      {
+        "name": "Action",
+        "kind": "type",
+        "file": "src/hooks/use-toast.ts",
+        "line": 37,
+        "exported": false
+      },
+      {
+        "name": "ActionType",
+        "kind": "type",
+        "file": "src/hooks/use-toast.ts",
+        "line": 35,
+        "exported": false
+      },
+      {
+        "name": "CarouselApi",
+        "kind": "type",
+        "file": "src/components/ui/carousel.tsx",
+        "line": 12,
+        "exported": false
+      },
+      {
+        "name": "CarouselContextProps",
+        "kind": "type",
+        "file": "src/components/ui/carousel.tsx",
+        "line": 24,
+        "exported": false
+      },
+      {
+        "name": "CarouselOptions",
+        "kind": "type",
+        "file": "src/components/ui/carousel.tsx",
+        "line": 14,
+        "exported": false
+      },
+      {
+        "name": "CarouselPlugin",
+        "kind": "type",
+        "file": "src/components/ui/carousel.tsx",
+        "line": 15,
+        "exported": false
+      },
+      {
+        "name": "CarouselProps",
+        "kind": "type",
+        "file": "src/components/ui/carousel.tsx",
+        "line": 17,
+        "exported": false
+      },
+      {
+        "name": "ChartContextProps",
+        "kind": "type",
+        "file": "src/components/ui/chart.tsx",
+        "line": 21,
+        "exported": false
+      },
+      {
+        "name": "FormFieldContextValue",
+        "kind": "type",
+        "file": "src/components/ui/form.tsx",
+        "line": 21,
+        "exported": false
+      },
+      {
+        "name": "FormItemContextValue",
+        "kind": "type",
+        "file": "src/components/ui/form.tsx",
+        "line": 68,
+        "exported": false
+      },
+      {
+        "name": "Message",
+        "kind": "type",
+        "file": "examples/websocket/frontend.tsx",
+        "line": 15,
+        "exported": false
+      },
+      {
+        "name": "SidebarContextProps",
+        "kind": "type",
+        "file": "src/components/ui/sidebar.tsx",
+        "line": 35,
+        "exported": false
+      },
+      {
+        "name": "Toast",
+        "kind": "type",
+        "file": "src/hooks/use-toast.ts",
+        "line": 143,
+        "exported": false
+      },
+      {
+        "name": "ToasterToast",
+        "kind": "type",
+        "file": "src/hooks/use-toast.ts",
+        "line": 14,
+        "exported": false
+      },
+      {
+        "name": "UseCarouselParameters",
+        "kind": "type",
+        "file": "src/components/ui/carousel.tsx",
+        "line": 13,
+        "exported": false
+      },
+      {
+        "name": "User",
+        "kind": "type",
+        "file": "examples/websocket/frontend.tsx",
+        "line": 10,
+        "exported": false
+      }
+    ],
+    "enums": []
+  },
+  "publicAPI": [
+    {
+      "name": "ChartConfig",
+      "kind": "type",
+      "file": "src/components/ui/chart.tsx",
+      "line": 11,
+      "exported": true
+    },
+    {
+      "name": "cn",
+      "kind": "function",
+      "file": "src/lib/utils.ts",
+      "line": 4,
+      "exported": true
+    },
+    {
+      "name": "DELETE",
+      "kind": "function",
+      "file": "src/app/api/signatures/[slug]/route.ts",
+      "line": 34,
+      "exported": true
+    },
+    {
+      "name": "GET",
+      "kind": "function",
+      "file": "src/app/api/route.ts",
+      "line": 3,
+      "exported": true
+    },
+    {
+      "name": "GET",
+      "kind": "function",
+      "file": "src/app/api/signatures/route.ts",
+      "line": 6,
+      "exported": true
+    },
+    {
+      "name": "GET",
+      "kind": "function",
+      "file": "src/app/api/signatures/[slug]/route.ts",
+      "line": 5,
+      "exported": true
+    },
+    {
+      "name": "POST",
+      "kind": "function",
+      "file": "src/app/api/signatures/route.ts",
+      "line": 20,
+      "exported": true
+    },
+    {
+      "name": "RootLayout",
+      "kind": "function",
+      "file": "src/app/layout.tsx",
+      "line": 29,
+      "exported": true
+    },
+    {
+      "name": "useIsMobile",
+      "kind": "function",
+      "file": "src/hooks/use-mobile.ts",
+      "line": 5,
+      "exported": true
+    }
+  ],
+  "dependencies": {
+    "mostImported": [
+      {
+        "file": "/home/resper/nSign/src/app/globals.css",
+        "importedBy": 1
+      }
+    ]
+  },
+  "stats": {
+    "totalSymbols": 100,
+    "exportedSymbols": 9,
+    "analysisTimeMs": 710
+  }
+}
