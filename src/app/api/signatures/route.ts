@@ -37,6 +37,10 @@ export async function POST(request: NextRequest) {
       return NextResponse.json({ error: 'Missing required fields' }, { status: 400 })
     }
 
+    if (!email.endsWith('@ness.com.br')) {
+      return NextResponse.json({ error: 'Acesso restrito a usuários @ness.com.br' }, { status: 403 })
+    }
+
     const slug = nanoid(8)
     const now = new Date()
 

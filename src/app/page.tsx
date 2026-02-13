@@ -897,14 +897,19 @@ END:VCARD`
             <CardContent className="p-6 space-y-5">
               {/* Google Auth Integration */}
               {!user ? (
-                <Button 
-                  onClick={signInWithGoogle}
-                  variant="outline"
-                  className="w-full h-11 border-slate-700 bg-slate-900 text-slate-300 hover:bg-slate-800 hover:text-white flex items-center justify-center gap-3 transition-all duration-200"
-                >
-                  <img src="https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/google.svg" alt="Google" className="w-5 h-5" />
-                  Preencher com Google
-                </Button>
+                <div className="space-y-3">
+                  <Button 
+                    onClick={signInWithGoogle}
+                    variant="outline"
+                    className="w-full h-11 border-slate-700 bg-slate-900 text-slate-300 hover:bg-slate-800 hover:text-white flex items-center justify-center gap-3 transition-all duration-200"
+                  >
+                    <img src="https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/google.svg" alt="Google" className="w-5 h-5" />
+                    Preencher com Google
+                  </Button>
+                  <p className="text-[10px] text-center text-slate-500 uppercase tracking-widest font-medium">
+                    Acesso exclusivo @ness.com.br
+                  </p>
+                </div>
               ) : (
                 <div className="flex items-center justify-between p-3 bg-slate-900/50 rounded-lg border border-slate-700/50">
                   <div className="flex items-center gap-3">

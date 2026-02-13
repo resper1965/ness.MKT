@@ -14,6 +14,7 @@ import {
   User,
 } from 'firebase/auth';
 import { auth, googleProvider } from '@/lib/firebase';
+import { toast } from 'sonner';
 
 interface AuthContextType {
   user: User | null;
@@ -34,7 +35,13 @@ export function AuthProvider({ children }: { children: ReactNode }) {
       return;
     }
     const unsubscribe = onAuthStateChanged(auth, (user) => {
-      setUser(user);
+      if (user && user.email && !user.email.endsWith('@ness.com.br')) {
+        toast.error('Acesso restrito a colaboradores @ness.com.br');
+        firebaseSignOut(auth);
+        setUser(null);
+      } else {
+        setUser(user);
+      }
       setLoading(false);
     });
 
